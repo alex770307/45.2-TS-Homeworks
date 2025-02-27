@@ -1,5 +1,5 @@
 import { fellowship } from './fellowship';
-import styles from './homework05.module.css';
+import  './homework05.css';
 
 function Homework05() {
   // console.log(fellowship);
@@ -12,7 +12,7 @@ function Homework05() {
     <>
       <h4>Homework05:</h4>
       <h2>React map() components 🧝‍♀️</h2>
-      <div className={styles.container}>
+      <div className="container">
         {fellowship.map((hero, index) => (
           // key - это уникальное значение которое просит передать react в итерируемую верстку для того чтобы не ошибиться в отрисовки при сложных операциях (сортировка / удаление)
             <div className={`heroCard ${hero.isDark ? 'dark' : 'light'}`} key={index}>
