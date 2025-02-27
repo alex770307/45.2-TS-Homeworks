@@ -1,0 +1,24 @@
+.profile-card {
+    background-color: #f9f9f9; /* Светлый фон */
+    border: 1px solid #ddd; /* Светлая рамка */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 16px; /* Отступы внутри карточки */
+    text-align: center; /* Центрирование текста */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятия */
+    max-width: 300px; /* Максимальная ширина карточки */
+    margin: 16px auto; /* Центрирование карточки на странице */
+}
+
+.profile-card img {
+    border-radius: 50%; /* Круглая аватарка */
+    width: 100px; /* Ширина аватарки */
+    height: 100px; /* Высота аватарки */
+    object-fit: cover; /* Обеспечивает обрезку изображения */
+    margin-bottom: 12px; /* Отступ снизу */
+}
+
+.profile-card p {
+    margin: 8px 0; /* Отступы между параграфами */
+    font-size: 16px; /* Размер шрифта */
+    color: #333; /* Цвет текста */
+}
