@@ -40,6 +40,9 @@ export default function HomePageHomeworks():JSX.Element {
           <Link to="homework-14">
             <div>Homework 14</div>
           </Link>
+          <Link to="homework-17">
+            <div>Homework 17</div>
+          </Link>
         </div>
       </>
     );

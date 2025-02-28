@@ -23,6 +23,9 @@ import Homework08 from "./homeworks/homework08/Homework08";
 import Homework11 from "./homeworks/homework11/Homework11";
 import Homework13 from "./homeworks/homework13/Homework13";
 import Homework14 from "./homeworks/homework14/Homework14";
+import Homework17 from "./homeworks/homework17/Homework17";
+import Store from "./components/store/Store";
+import StorePage from "./components/storePage/StorePage";
 
 
 
@@ -48,6 +51,8 @@ function App() {
               <Route path="products" element={<Products />} />
               {/* новый динамический роутинг */}
               <Route path="products/:id" element={<ProductPage />} />
+              <Route path="store" element={<Store />} />
+              <Route path="store/:id" element={<StorePage />} />
 
               <Route path="homework-01" element={<Homework01 />} />
               <Route path="homework-02" element={<Homework02 />} />
@@ -61,6 +66,8 @@ function App() {
               <Route path="homework-13" element={<Homework13 />} />
               <Route path="homework-14" element={<Homework14 />} />
               <Route path="homework-14/:id" element={<ProductPage />} />
+              <Route path="homework-17" element={<Homework17 />} />
+              <Route path="homework-17/:id" element={<StorePage />} />
 
               <Route path="*" element={<NoPage />} />
             </Route>

@@ -36,12 +36,19 @@ export default function Layout() {
           >
             products
           </NavLink>
+           <NavLink
+            className={({ isActive }) => (isActive ? styles.linkActive : "")}
+            to="store"
+          >
+            store
+          </NavLink>
           <NavLink
             className={({ isActive }) => (isActive ? styles.linkActive : "")}
             to="cart"
           >
             cart
           </NavLink>
+         
         </nav>
         <span>total: {getTotalPrice(cart)}€</span>
       </header>
