@@ -12,7 +12,7 @@ import ProductPage from "./components/productPage/ProductPage";
 import FormGender from "./homeworks/homework12/FormGender";
 import NoPage from "./components/noPage/NoPage";
 import HomePage from "./components/homePage/HomePage";
-// import Lesson05 from "./components/fellowship/Lesson05";
+
 import Homework01 from "./homeworks/homework01/Homework01";
 import Homework02 from "./homeworks/homework02/Homework02";
 import Homework03 from "./homeworks/homework03/Homework03";
@@ -26,14 +26,6 @@ import Homework14 from "./homeworks/homework14/Homework14";
 import Homework17 from "./homeworks/homework17/Homework17";
 import Store from "./components/store/Store";
 import StorePage from "./components/storePage/StorePage";
-
-
-
-
-
-
-
-
 
 function App() {
   return (

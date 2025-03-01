@@ -16,11 +16,15 @@ export default function Cart(): JSX.Element {
     <div className={styles.cartContainer}>
       <h2>Cart 🛒</h2>
       <div className={styles.cartList}>
-        {cart.map(el => (
+        {cart.map((el) => (
           <div key={el.id}>
-            <button onClick={() => removeFromCart(el.id)}>delete</button>
+            <MyButton
+              func={() => removeFromCart(el.id)}
+              variant="primary"
+              text={"delete"}
+            />
             <span>{el.title}</span>
-            <span style={{ fontWeight: 'bold' }}> quantity: {el.quantity}</span>
+            <span style={{ fontWeight: "bold" }}> quantity: {el.quantity}</span>
           </div>
         ))}
       </div>
@@ -29,7 +33,7 @@ export default function Cart(): JSX.Element {
         <h3>Total price: €{getTotalPrice(cart)}</h3>
       </div>
       <div>
-        <MyButton func={clearCart} variant="danger" text={'clear cart'} />
+        <MyButton func={clearCart} variant="danger" text={"clear cart"} />
       </div>
     </div>
   );
